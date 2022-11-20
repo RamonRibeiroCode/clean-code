@@ -1,0 +1,18 @@
+button {
+  width: 100%;
+  max-width: 240px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 24px;
+  padding: 12 24px;
+  background-color: #000000;
+
+  font-family: 'Gill Sans', sans-serif;
+  text-align: center;
+  text-decoration: line-through;
+  color: #cccccc;
+}
