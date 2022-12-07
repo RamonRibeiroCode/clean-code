@@ -24,6 +24,7 @@
     "prettier"
   ],
   "rules": {
+    "prefer-destructuring": "warn",
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": "warn",
     "react-hooks/rules-of-hooks": "error",
@@ -47,11 +48,6 @@
     "import/export": "warn",
     "import/no-useless-path-segments": "error",
     "import/no-self-import": "error",
-    "import/no-absolute-path": "error",
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    }
+    "import/no-absolute-path": "error"
   }
 }

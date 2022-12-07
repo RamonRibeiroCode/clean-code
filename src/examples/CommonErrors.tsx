@@ -1,8 +1,4 @@
-// @ts-nocheck
-
 // Tentar reduzir demais o código
-// USE KISS
-
 const Gallery = () => {
   const limitPrice = 2
 
@@ -39,9 +35,18 @@ const Gallery = () => {
 }
 
 // Desconhecimento de features built in
+
+const formatInt = (number: number) => {
+  if (number >= 10) {
+    return String(number)
+  }
+
+  return `0${number}`
+}
+
 const itemsOnCart = 3
 
-const formattedPrice = itemsOnCart.toString().padStart(2, '0')
+const formattedPrice = itemsOnCart.toString().padStart(5, '0')
 formattedPrice // "03"
 
 // Return Early
@@ -75,11 +80,11 @@ export const handleError = (err: unknown): AppError => {
         message: err.response.data.message,
         code: err.response.status,
       }
-    } else {
-      return {
-        message: 'Erro inesperado, tente novamente',
-        code: 500,
-      }
+    }
+
+    return {
+      message: 'Erro inesperado, tente novamente',
+      code: 500,
     }
   } else {
     return {

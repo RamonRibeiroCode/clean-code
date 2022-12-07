@@ -1,4 +1,6 @@
-// De nomes com sentido para funções
+// De nomes descritivos para funções
+// Não se importe com o tamanho dos nomes
+
 const findProductByName = (name: string) => {
   const products = [
     {
@@ -18,8 +20,6 @@ const findProductByName = (name: string) => {
 const getAllCategories = () => {
   return ['Roupas', 'Bolsas', 'Acessórios']
 }
-
-// ======================================
 
 // Forma errada
 const getStore = (data: boolean) => {
