@@ -26,7 +26,6 @@
   "rules": {
     "prefer-destructuring": "warn",
     "react/react-in-jsx-scope": "off",
-    "prettier/prettier": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "import/order": [
@@ -48,6 +47,12 @@
     "import/export": "warn",
     "import/no-useless-path-segments": "error",
     "import/no-self-import": "error",
-    "import/no-absolute-path": "error"
+    "import/no-absolute-path": "error",
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }

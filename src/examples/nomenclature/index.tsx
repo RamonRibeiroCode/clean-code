@@ -1,7 +1,7 @@
 // De nomes descritivos para funções
 // Não se importe com o tamanho dos nomes
 
-const findProductByName = (name: string) => {
+export const findProductByName = (name: string) => {
   const products = [
     {
       name: 'Cola',
@@ -17,19 +17,19 @@ const findProductByName = (name: string) => {
   return products.find((product) => product.name === name)
 }
 
-const getAllCategories = () => {
+export const getAllCategories = () => {
   return ['Roupas', 'Bolsas', 'Acessórios']
 }
 
 // Forma errada
-const getStore = (data: boolean) => {
+export const getStore = (data: boolean) => {
   if (data) return 'Mercado'
 
   return 'Shopping'
 }
 
 // De nomes a condicionais sem sentido por si só
-const OrderDetail = () => {
+export const OrderDetail = () => {
   const order = {
     origin: 'Janis',
     isPickUp: true,
